@@ -1,0 +1,53 @@
+/* CSS RESET Section */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vw;
+  display: flex;
+}
+.column {
+  width: 6.25vw;
+}
+.square {
+  position: relative;
+  width: 6.25vw;
+  height: 6.25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+img {
+  width: 90%;
+}
+
+#container .column:nth-of-type(odd) .square:nth-of-type(even) {
+  background-color: #779954;
+}
+#container .column:nth-of-type(odd) .square:nth-of-type(odd) {
+  background-color: #e9edcc;
+}
+
+#container .column:nth-of-type(even) .square:nth-of-type(odd) {
+  background-color: #779954;
+}
+
+#container .column:nth-of-type(even) .square:nth-of-type(even) {
+  background-color: #e9edcc;
+}
+.grey {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  margin: auto auto;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.2);
+}
